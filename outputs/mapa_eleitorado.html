@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_988efadc284273d4f37a0edbc8949a56 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_988efadc284273d4f37a0edbc8949a56" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_988efadc284273d4f37a0edbc8949a56 = L.map(
+                "map_988efadc284273d4f37a0edbc8949a56",
+                {
+                    center: [-16.6869, -49.2643],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_34cea4e635d1ae68b4bab34e54a9641e = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_34cea4e635d1ae68b4bab34e54a9641e.addTo(map_988efadc284273d4f37a0edbc8949a56);
+        
+    
+            var circle_marker_60a4c6ac070397c3e0fa840581a99a27 = L.circleMarker(
+                [-16.7411, -49.31],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 30.38125, "stroke": true, "weight": 3}
+            ).addTo(map_988efadc284273d4f37a0edbc8949a56);
+        
+    
+        var popup_ffbb3ced7143ab5ba6c2ff262985ecc6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1a37172eb8aac22d24982515ad9c482c = $(`<div id="html_1a37172eb8aac22d24982515ad9c482c" style="width: 100.0%; height: 100.0%;">Zona 146: 121525 eleitores</div>`)[0];
+                popup_ffbb3ced7143ab5ba6c2ff262985ecc6.setContent(html_1a37172eb8aac22d24982515ad9c482c);
+            
+        
+
+        circle_marker_60a4c6ac070397c3e0fa840581a99a27.bindPopup(popup_ffbb3ced7143ab5ba6c2ff262985ecc6)
+        ;
+
+        
+    
+    
+            circle_marker_60a4c6ac070397c3e0fa840581a99a27.bindTooltip(
+                `<div>
+                     Zona 146 (Clique para detalhes)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8de841e0e5ff22adb97bb5f20961c27a = L.circleMarker(
+                [-16.6911, -49.3],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 29.6495, "stroke": true, "weight": 3}
+            ).addTo(map_988efadc284273d4f37a0edbc8949a56);
+        
+    
+        var popup_80a53468bb21d56a9ba12ff765d27eed = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4bedeca77e536a74d271f5cca11ffbf8 = $(`<div id="html_4bedeca77e536a74d271f5cca11ffbf8" style="width: 100.0%; height: 100.0%;">Zona 134: 118598 eleitores</div>`)[0];
+                popup_80a53468bb21d56a9ba12ff765d27eed.setContent(html_4bedeca77e536a74d271f5cca11ffbf8);
+            
+        
+
+        circle_marker_8de841e0e5ff22adb97bb5f20961c27a.bindPopup(popup_80a53468bb21d56a9ba12ff765d27eed)
+        ;
+
+        
+    
+    
+            circle_marker_8de841e0e5ff22adb97bb5f20961c27a.bindTooltip(
+                `<div>
+                     Zona 134 (Clique para detalhes)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_127765677add8e6588fdf608dd7ac510 = L.circleMarker(
+                [-16.68, -49.21],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 28.83575, "stroke": true, "weight": 3}
+            ).addTo(map_988efadc284273d4f37a0edbc8949a56);
+        
+    
+        var popup_371d1d2084212e5012532357667fccc2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a67b2ef8e492468d73ca6889e0f2c158 = $(`<div id="html_a67b2ef8e492468d73ca6889e0f2c158" style="width: 100.0%; height: 100.0%;">Zona 127: 115343 eleitores</div>`)[0];
+                popup_371d1d2084212e5012532357667fccc2.setContent(html_a67b2ef8e492468d73ca6889e0f2c158);
+            
+        
+
+        circle_marker_127765677add8e6588fdf608dd7ac510.bindPopup(popup_371d1d2084212e5012532357667fccc2)
+        ;
+
+        
+    
+    
+            circle_marker_127765677add8e6588fdf608dd7ac510.bindTooltip(
+                `<div>
+                     Zona 127 (Clique para detalhes)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cfe484f0c9f1c62034e0186a4c1c9e2c = L.circleMarker(
+                [-16.71, -49.23],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 28.65325, "stroke": true, "weight": 3}
+            ).addTo(map_988efadc284273d4f37a0edbc8949a56);
+        
+    
+        var popup_5eafd6ecd4e19d19d07449449963c64b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7a3192b289eefbe7814801073db71cc9 = $(`<div id="html_7a3192b289eefbe7814801073db71cc9" style="width: 100.0%; height: 100.0%;">Zona 147: 114613 eleitores</div>`)[0];
+                popup_5eafd6ecd4e19d19d07449449963c64b.setContent(html_7a3192b289eefbe7814801073db71cc9);
+            
+        
+
+        circle_marker_cfe484f0c9f1c62034e0186a4c1c9e2c.bindPopup(popup_5eafd6ecd4e19d19d07449449963c64b)
+        ;
+
+        
+    
+    
+            circle_marker_cfe484f0c9f1c62034e0186a4c1c9e2c.bindTooltip(
+                `<div>
+                     Zona 147 (Clique para detalhes)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0df69e3d915be0eaadede3d71a9f2716 = L.circleMarker(
+                [-16.62, -49.23],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 28.6275, "stroke": true, "weight": 3}
+            ).addTo(map_988efadc284273d4f37a0edbc8949a56);
+        
+    
+        var popup_00d066dd93d55f37f25893ec0d899a2a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c3f7c7a5c0a7a1e910805f4837a68343 = $(`<div id="html_c3f7c7a5c0a7a1e910805f4837a68343" style="width: 100.0%; height: 100.0%;">Zona 135: 114510 eleitores</div>`)[0];
+                popup_00d066dd93d55f37f25893ec0d899a2a.setContent(html_c3f7c7a5c0a7a1e910805f4837a68343);
+            
+        
+
+        circle_marker_0df69e3d915be0eaadede3d71a9f2716.bindPopup(popup_00d066dd93d55f37f25893ec0d899a2a)
+        ;
+
+        
+    
+    
+            circle_marker_0df69e3d915be0eaadede3d71a9f2716.bindTooltip(
+                `<div>
+                     Zona 135 (Clique para detalhes)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_005f1797c48f17bff3628024edaa80ec = L.circleMarker(
+                [-16.7022, -49.2661],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 28.5455, "stroke": true, "weight": 3}
+            ).addTo(map_988efadc284273d4f37a0edbc8949a56);
+        
+    
+        var popup_080dc8bc041134134eb69f8ca4a6182e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4b1f16ec89abbd7ebc3b2a9424b0e834 = $(`<div id="html_4b1f16ec89abbd7ebc3b2a9424b0e834" style="width: 100.0%; height: 100.0%;">Zona 133: 114182 eleitores</div>`)[0];
+                popup_080dc8bc041134134eb69f8ca4a6182e.setContent(html_4b1f16ec89abbd7ebc3b2a9424b0e834);
+            
+        
+
+        circle_marker_005f1797c48f17bff3628024edaa80ec.bindPopup(popup_080dc8bc041134134eb69f8ca4a6182e)
+        ;
+
+        
+    
+    
+            circle_marker_005f1797c48f17bff3628024edaa80ec.bindTooltip(
+                `<div>
+                     Zona 133 (Clique para detalhes)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0da6ef8890cc12a3bca123d7438423d7 = L.circleMarker(
+                [-16.6733, -49.2789],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 28.026, "stroke": true, "weight": 3}
+            ).addTo(map_988efadc284273d4f37a0edbc8949a56);
+        
+    
+        var popup_f7cb8c4d8a597519019440abd2b60c0b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_79149f6ba0093e9798baa1fbae22b3f9 = $(`<div id="html_79149f6ba0093e9798baa1fbae22b3f9" style="width: 100.0%; height: 100.0%;">Zona 2: 112104 eleitores</div>`)[0];
+                popup_f7cb8c4d8a597519019440abd2b60c0b.setContent(html_79149f6ba0093e9798baa1fbae22b3f9);
+            
+        
+
+        circle_marker_0da6ef8890cc12a3bca123d7438423d7.bindPopup(popup_f7cb8c4d8a597519019440abd2b60c0b)
+        ;
+
+        
+    
+    
+            circle_marker_0da6ef8890cc12a3bca123d7438423d7.bindTooltip(
+                `<div>
+                     Zona 2 (Clique para detalhes)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d866f8a7afef741eda505a499180bf07 = L.circleMarker(
+                [-16.6111, -49.305],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 27.85075, "stroke": true, "weight": 3}
+            ).addTo(map_988efadc284273d4f37a0edbc8949a56);
+        
+    
+        var popup_5c1e7eea9775309fdc6306d3c758aae2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a1765725784d0d349db91a25da69be02 = $(`<div id="html_a1765725784d0d349db91a25da69be02" style="width: 100.0%; height: 100.0%;">Zona 136: 111403 eleitores</div>`)[0];
+                popup_5c1e7eea9775309fdc6306d3c758aae2.setContent(html_a1765725784d0d349db91a25da69be02);
+            
+        
+
+        circle_marker_d866f8a7afef741eda505a499180bf07.bindPopup(popup_5c1e7eea9775309fdc6306d3c758aae2)
+        ;
+
+        
+    
+    
+            circle_marker_d866f8a7afef741eda505a499180bf07.bindTooltip(
+                `<div>
+                     Zona 136 (Clique para detalhes)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5bf7b26431fc5dbe5ef34631de7c5793 = L.circleMarker(
+                [-16.6799, -49.255],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.999, "stroke": true, "weight": 3}
+            ).addTo(map_988efadc284273d4f37a0edbc8949a56);
+        
+    
+        var popup_a5429d0b2c28e11a0177e9f27cc9e2d1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b16013d021555641514d57cd713b792b = $(`<div id="html_b16013d021555641514d57cd713b792b" style="width: 100.0%; height: 100.0%;">Zona 1: 107996 eleitores</div>`)[0];
+                popup_a5429d0b2c28e11a0177e9f27cc9e2d1.setContent(html_b16013d021555641514d57cd713b792b);
+            
+        
+
+        circle_marker_5bf7b26431fc5dbe5ef34631de7c5793.bindPopup(popup_a5429d0b2c28e11a0177e9f27cc9e2d1)
+        ;
+
+        
+    
+    
+            circle_marker_5bf7b26431fc5dbe5ef34631de7c5793.bindTooltip(
+                `<div>
+                     Zona 1 (Clique para detalhes)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
