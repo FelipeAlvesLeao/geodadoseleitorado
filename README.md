@@ -13,8 +13,8 @@ O sistema consiste em um mini pipeline ETL que processa dados do Tribunal Superi
 
 ## Estrutura do Projeto
 
-
-nie-dados/
+```
+root/
 ├── data/
 │   ├── raw/             # Arquivo CSV original do TSE dentro dessa pasta
 │   └── processed/       
@@ -25,7 +25,8 @@ nie-dados/
 │   └── map_gen.py       #
 ├── outputs/             # Arquivos gerado (mapa em HTML)
 ├── main.py              
-└── README.md            
+└── README.md
+```
 
 ## Como Executar
 
